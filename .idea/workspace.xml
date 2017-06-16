@@ -2,19 +2,270 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cc9871a-0181-4d1b-be34-340982279b86" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/identify.html" afterPath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/identify.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/index.html" afterPath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/message.html" afterPath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/message.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/newslist.html" afterPath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/newslist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/smsInfo.html" afterPath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/smsInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/userInfo.html" afterPath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/userInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/identify.html" afterPath="$PROJECT_DIR$/web/identify.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/message.html" afterPath="$PROJECT_DIR$/web/message.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/newslist.html" afterPath="$PROJECT_DIR$/web/newslist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/smsInfo.html" afterPath="$PROJECT_DIR$/web/smsInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/userInfo.html" afterPath="$PROJECT_DIR$/web/userInfo.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/classes/db.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/classes/mybatis/SqlMapConfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/classes/spring/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/classes/spring/springmvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/aspectjweaver-1.8.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/c3p0-0.9.5.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/commons-codec-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/commons-dbcp2-2.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/commons-lang3-3.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/druid-1.0.29.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/gson-2.8.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/httpclient-4.5.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/httpcore-4.4.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/jackson-annotations-2.9.0.pr3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/jackson-core-2.9.0.pr3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/jackson-databind-2.9.0.pr3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/jackson-dataformat-csv-2.8.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/jackson-dataformat-xml-2.9.0.pr3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/jackson-module-jaxb-annotations-2.9.0.pr3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/jconsole.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/joda-time-2.9.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/junit-4.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/log4j-api-2.8.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/log4j-core-2.8.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/mchange-commons-java-0.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/mybatis-3.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/mysql-connector-java-6.0.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/slf4j-api-1.7.25.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-aop-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-aspects-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-beans-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-context-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-context-support-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-core-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-expression-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-instrument-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-instrument-tomcat-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-jdbc-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-jms-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-messaging-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-orm-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-oxm-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-test-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-tx-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-web-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-webmvc-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-webmvc-portlet-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/spring-websocket-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/stax2-api-3.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/tools.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/woodstox-core-5.0.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/lib/zip4j-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/bootstrap-3.3.5-dist/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/bootstrap-3.3.5-dist/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/bootstrap-3.3.5-dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/bootstrap-3.3.5-dist/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/bootstrap-3.3.5-dist/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/css/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/css/dermadefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/css/dermagreen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/css/dermaorange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/css/jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/css/templatecss.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/identify.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/computer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/download.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/forget.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/icon_authentication.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/icon_author.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/icon_control.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/icon_cost.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/icon_gold.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/icon_market.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/icon_message.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/icon_news.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/icon_order.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/icon_set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/identify_developer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/identify_enterprise.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/identify_personal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/leftimg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/login-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/move.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/noavatar_middle.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/qrcode.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/triangle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/img/yzm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jsp/CDNList.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jsp/axios.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jsp/demo.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jsp/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jsp/register.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/extensions/jquery.jtable.aspnetpagemethods.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/extensions/jquery.jtable.aspnetpagemethods.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/external/json2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/external/json2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/jquery.jtable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/jquery.jtable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.bd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.cz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.lt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.nl-NL.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.no.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.pt-PT.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.se.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.vi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/localization/jquery.jtable.zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/basic/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/basic/column-asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/basic/column-desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/basic/column-sortable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/basic/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/basic/edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/basic/jtable_basic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/basic/jtable_basic.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/basic/jtable_basic.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/bg-thead.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/column-asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/column-desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/column-sortable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/jtable_jqueryui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/jtable_jqueryui.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/jtable_jqueryui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jqueryui/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/jtable_theme_base.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/bg-thead.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/blue/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/blue/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/blue/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/blue/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/column-asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/column-desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/column-sortable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/gray/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/gray/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/gray/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/gray/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/green/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/green/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/green/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/green/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/jtable_lightcolor_base.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/orange/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/orange/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/orange/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/orange/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/red/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/red/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/red/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/lightcolor/red/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/blue/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/blue/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/blue/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/blue/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/brown/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/brown/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/brown/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/brown/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/column-asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/column-desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/column-sortable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/crimson/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/crimson/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/crimson/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/crimson/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/darkgray/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/darkgray/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/darkgray/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/darkgray/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/darkorange/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/darkorange/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/darkorange/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/darkorange/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/green/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/green/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/green/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/green/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/jtable_metro_base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/jtable_metro_base.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/jtable_metro_base.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/lightgray/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/lightgray/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/lightgray/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/lightgray/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/pink/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/pink/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/pink/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/pink/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/purple/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/purple/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/purple/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/purple/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/red/jtable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/red/jtable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/red/jtable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/jtable.2.4.0/themes/metro/red/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/message.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/newslist.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/script/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/script/jquery-1.11.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/script/jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/script/jtablesite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/script/modernizr-2.6.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/smsInfo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/ui-layout-0.0.0/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/ui-layout-0.0.0/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/ui-layout-0.0.0/ui-layout.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/ui-layout-0.0.0/ui-layout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/ui-layout-0.0.0/ui-layout.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CodePlayWeb_war_exploded/userInfo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/db.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mybatis/SqlMapConfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring/springmvc.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,21 +305,31 @@
         <entry file="file://$PROJECT_DIR$/web/message.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-462">
-              <caret line="265" column="19" lean-forward="true" selection-start-line="265" selection-start-column="19" selection-end-line="265" selection-end-column="19" />
+              <caret line="265" column="19" lean-forward="false" selection-start-line="265" selection-start-column="19" selection-end-line="265" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="identify.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="identify.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/identify.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="825">
-              <caret line="186" column="85" lean-forward="true" selection-start-line="186" selection-start-column="85" selection-end-line="186" selection-end-column="85" />
+              <caret line="186" column="85" lean-forward="false" selection-start-line="186" selection-start-column="85" selection-end-line="186" selection-end-column="85" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,6 +402,7 @@
         <option value="$PROJECT_DIR$/web/res.txt" />
         <option value="$PROJECT_DIR$/web/response.txt" />
         <option value="$PROJECT_DIR$/web/bootstrap-simple.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -834,15 +1096,16 @@
       <option name="presentableId" value="Default" />
       <updated>1497522117602</updated>
       <workItem from="1497522124143" duration="13966000" />
-      <workItem from="1497573229629" duration="6764000" />
+      <workItem from="1497573229629" duration="6921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20730000" />
+    <option name="totallyTimeSpent" value="20887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -865,7 +1128,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12953092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12953092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1127,7 +1390,7 @@
     <entry file="file://$PROJECT_DIR$/web/message.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-462">
-          <caret line="265" column="19" lean-forward="true" selection-start-line="265" selection-start-column="19" selection-end-line="265" selection-end-column="19" />
+          <caret line="265" column="19" lean-forward="false" selection-start-line="265" selection-start-column="19" selection-end-line="265" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1135,11 +1398,19 @@
     <entry file="file://$PROJECT_DIR$/web/identify.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
-          <caret line="186" column="85" lean-forward="true" selection-start-line="186" selection-start-column="85" selection-end-line="186" selection-end-column="85" />
+          <caret line="186" column="85" lean-forward="false" selection-start-line="186" selection-start-column="85" selection-end-line="186" selection-end-column="85" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
