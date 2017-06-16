@@ -10,12 +10,4 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<package name="po" />
 	</typeAliases>
 
-	<!-- 配置分页插件 -->
-	<plugins>
-		<plugin interceptor="com.github.pagehelper.PageHelper">
-			<!-- 指定数据库方言 -->
-			<property name="dialect" value="mysql"/>
-		</plugin>
-	</plugins>
-
 </configuration>

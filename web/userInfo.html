@@ -11,9 +11,15 @@
     <link title="green" href="css/dermagreen.css" rel="stylesheet" type="text/css" disabled="disabled"/>
     <link title="orange" href="css/dermaorange.css" rel="stylesheet" type="text/css" disabled="disabled"/>
     <link href="css/templatecss.css" rel="stylesheet" title="" type="text/css"/>
+    <link href="css/buttons.css">
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="script/jquery.cookie.js" type="text/javascript"></script>
-    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.2.0/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.2.0/jquery-confirm.min.js"></script>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css" />-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.zh-TW.min.js"></script>-->
 </head>
 
 <body>
@@ -213,12 +219,19 @@
                 <dl class="account-basic clearfix">
                     <dt class="pull-left">
                     <p class="account-head">
-                        <img src="img/noavatar_middle.gif">
+                        <img src="img/noavatar_middle.gif" id="avatar">
                     </p>
                     </dt>
                     <dd class="pull-left margin-large-left margin-small-top">
                         <p class="text-small">
-                            <span class="show pull-left base-name">会员账号</span>:<span class="margin-left">小朱 </span>
+                            <button id="edit" class="button button-primary button-rounded button-small" style="background-color: #4cb0f9; color: #FFF;">修改资料</button>
+                        <form id="uploadForm" method="post" enctype="multipart/form-data">
+                        <input type="file" id="btn_file" name="img" onchange="upload()" size="50" style="display: none; position:absolute">
+                            <button type="button" id="edit_avatar" onclick="$('#btn_file').click()" class="button button-primary button-rounded button-small" style="background-color: #4824a2; color: #FFF;">上传头像</button>
+                        </form>
+                        </p>
+                        <p class="text-small">
+                            <span class="show pull-left base-name">会员账号</span>:<span class="margin-left">小朱</span><br/>
                         </p>
                         <p class="text-small">
                             <span class="show pull-left base-name">认证状态</span>:
@@ -230,28 +243,32 @@
                         </p>
                     </dd>
                 </dl>
+
                 <dl class="account-basic clearfix">
                     <dd class="pull-left margin-large-left margin-small-top">
                         <p class="text-small">
                             <span class="show pull-left base-name">姓名</span>:<span class="margin-left" id="name"></span>
                         </p>
                         <p class="text-small">
+                            <span class="show pull-left base-name">邮箱</span>:<span class="margin-left" id="email"></span>
+                        </p>
+                        <p class="text-small">
+                            <span class="show pull-left base-name">手机号</span>:<span class="margin-left" id="phone"></span>
+                        </p>
+                        <p class="text-small">
+                            <span class="show pull-left base-name">身份证号</span>:<span class="margin-left" id="idcard"></span>
+                        </p>
+                        <p class="text-small">
                             <span class="show pull-left base-name">性别</span>:<span class="margin-left" id="sex"></span>
                         </p>
                         <p class="text-small">
-                            <span class="show pull-left base-name">生日</span>:<span class="margin-left"
-                                                                                   id="birthday"></span>
+                            <span class="show pull-left base-name">生日</span>:<span class="margin-left" id="birthday"></span>
                         </p>
                         <p class="text-small">
                             <span class="show pull-left base-name">职业</span>:<span class="margin-left" id="job"></span>
                         </p>
                         <p class="text-small">
-                            <span class="show pull-left base-name">邮箱</span>:<span class="margin-left"
-                                                                                   id="email"></span>
-                        </p>
-                        <p class="text-small">
-                            <span class="show pull-left base-name" id="phone">手机号</span>:<span
-                                class="margin-left"></span>
+                            <span class="show pull-left base-name">诚信值</span>:<span class="margin-left" id="honesty"></span>
                         </p>
                     </dd>
                 </dl>
@@ -262,8 +279,7 @@
                              data-width="100">
                         </div>
                     </div>
-                    <span class="pull-left show text-small">安全级别: <span style="color: rgb(255, 153, 0);"
-                                                                        class="leval-safe">高</span></span>
+                    <span class="pull-left show text-small">安全级别: <span style="color: rgb(255, 153, 0);" class="leval-safe">高</span></span>
                 </div>
                 <ul class="accound-bund">
                     <li class="clearfix">
@@ -296,14 +312,6 @@
                                data-callback="layer.closeAll();" class="modif_email_setup2 btn_ajax_open" type="hidden">
 						</span>
                     </li>
-
-                    <li class="clearfix border-bottom-none">
-                        <span class="bund-class">邀请链接</span>
-                        <span class="w45" id="fe_text">http://t.cn/Edcx4Wt</span>
-                        <span class="pull-right margin-large-right">
-						<a class="button-word1 margin-left" id="copy_button" data-clipboard-target="fe_text" href="#">复制链接</a>
-						</span>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -311,6 +319,10 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
+//        $('#btn_file').bind('', function(){
+//
+//        });
+
         $.ajax({
             url: 'http://114.115.212.203:8001/do_login/',
             type: 'POST',
@@ -334,17 +346,148 @@
             },
             dataType: "json",
             success: function (returndata) {
+                $('#image').html(returndata.user.faceurl);
                 $('#name').html(returndata.user.uname);
                 $('#email').html(returndata.user.uemail);
+                $('#tel').html(returndata.user.utel);
+                $('#idcard').html(returndata.user.uidcard);
                 $('#sex').html(returndata.user.usex);
-                $('#birthday').html(returndata.user.uhonesty);
+                $('#birthday').html(returndata.user.uyear + "年" + returndata.user.umonth + "月" + returndata.user.uday + "日");
                 $('#job').html(returndata.user.uidentity);
+                $('#honesty').html(returndata.user.uhonesty);
             },
             error: function (returndata) {
                 console.log(returndata.msg);
             }
         });
     });
+
+    $("#edit").click(function () {
+        $.confirm({
+            title: '信息修改',
+            content: '' +
+            '<div class="form-group">' +
+                '<input type="text" placeholder="姓名" id="ename" class="name form-control" required />' +
+                '<input type="text" placeholder="性别" id="esex" class="name form-control" required />' +
+                '<input type="text" placeholder="认证身份" id="eidentity" class="name form-control" required />' +
+                '<input type="text" placeholder="身份证" id="eidcard" class="name form-control" required />' +
+                '<input type="text" placeholder="手机号" id="etel" class="name form-control" required />' +
+                '<input type="text" placeholder="年" id="eyear" class="name form-control" required /><nobr/>' +
+                '<input type="text" placeholder="月" id="emonth" class="name form-control" required /><nobr/>' +
+                '<input type="text" placeholder="日" id="eday" class="name form-control" required />' +
+            '</div>',
+            buttons: {
+                formSubmit: {
+                    text: 'Submit',
+                    btnClass: 'btn-blue',
+                    action: function () {
+                        var name = this.$content.find('.name').val();
+                        if(!name){
+                            $.alert('provide a valid name');
+                            return false;
+                        }
+                        var ename = $("#ename").val();
+                        var esex = $("#esex").val();
+                        var eidentity = $("#eidentity").val();
+                        var eidcard = $("#eidcard").val();
+                        var etel = $("#etel").val();
+                        var eyear = parseInt($("#eyear").val());
+                        var emonth = parseInt($("#emonth").val());
+                        var eday = parseInt($("#eday").val());
+
+                        if(esex==="男") esex="1";
+                        if(esex==="女") esex="0";
+                        if(esex!=="男"&&esex!=="女") esex="-1";
+
+                        $.ajax({
+                            url: 'http://114.115.212.203:8001/do_modify/',
+                            type: 'POST',
+                            xhrFields: {
+                                withCredentials: true
+                            },
+                            data: {
+                                'realname':ename,
+                                'sex':esex,
+                                'identity':eidentity,
+                                'idcard':eidcard,
+                                'tel':etel,
+                                'year':eyear,
+                                'month':emonth,
+                                'day':eday
+                            },
+                            dataType: "json",
+                            success: function (returndata) {
+                                console.log(returndata);
+//                                window.location.reload();
+                                $("#ename").reload();
+                            },
+                            error: function (returndata) {
+                                console.log(returndata);
+                            }
+                        });
+                    }
+                },
+                cancel: function () {
+                    //close
+                }
+            },
+            onContentReady: function () {
+                var jc = this;
+                this.$content.find('form').on('submit', function (e) {
+                    // if the user submits the form by pressing enter in the field.
+                    e.preventDefault();
+                    jc.$$formSubmit.trigger('click'); // reference the button and click it
+                });
+            }
+        });
+    });
+
+    function upload() {
+        $.ajax({
+            url: 'http://114.115.212.203:8001/do_uploadface/',
+            type: 'POST',
+            xhrFields: {
+                withCredentials: true
+            },
+            data: new FormData($("#uploadForm")[0]),
+            dataType: "json",
+            processData: false,
+            contentType: false,
+            success: function (returndata) {
+                console.log(returndata);
+            },
+            error: function (returndata) {
+                console.log(returndata);
+            }
+        });
+    }
+
+//    $("#edit_avatar").click(function () {
+//        $("#btn_file").click();
+////        document.querySelector('#edit_avatar').addEventListener('click', function(evt) {
+////            evt.stopPropagation();
+////            document.getElementById('btn_file').click();
+////        }, false);
+//
+//        $.ajax({
+//            url: 'http://114.115.212.203:8001/do_uploadface/',
+//            type: 'POST',
+//            xhrFields: {
+//                withCredentials: true
+//            },
+//            data: new FormData($("#uploadForm")[0]),
+//            dataType: "json",
+//            processData: false,
+//            contentType: false,
+//            success: function (returndata) {
+//                console.log(returndata);
+//            },
+//            error: function (returndata) {
+//                console.log(returndata);
+//            }
+//        });
+//    });
+
 
 </script>
 <script type="text/javascript">
