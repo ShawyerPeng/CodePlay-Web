@@ -12,6 +12,9 @@
     <link title="orange" href="css/dermaorange.css" rel="stylesheet" type="text/css" disabled="disabled"/>
     <link href="css/templatecss.css" rel="stylesheet" title="" type="text/css"/>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"/>
+
     <script src="script/jquery.cookie.js" type="text/javascript"></script>
     <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js" type="text/javascript"></script>
 </head>
@@ -191,9 +194,9 @@
                         <a href="message.html"><span class="sublist-icon glyphicon glyphicon-envelope"></span><span
                                 class="sub-title">消息中心</span></a></li>
                     <li>
-                        <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>短信</div>
+                        <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>上传图片</div>
                         <a href="smsInfo.html"><span class="sublist-icon glyphicon glyphicon-bullhorn"></span><span
-                                class="sub-title">短信</span></a></li>
+                                class="sub-title">上传图片</span></a></li>
                     <li>
                         <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>实名认证</div>
                         <a href="identify.html"><span class="sublist-icon glyphicon glyphicon-credit-card"></span><span
@@ -246,9 +249,76 @@
                 <ul>
                 </ul>
             </div>
+
         </div>
+
+        <table id="example" class="display" cellspacing="0" width="100%">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+            </tfoot>
+        </table>
     </div>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            url: 'http://114.115.212.203:8001/do_login/',
+            type: 'POST',
+            data: {
+                "name": "admin",
+                "pwd": "9876543210"
+            },
+            dataType: "json",
+            success: function (returndata) {
+                console.log(returndata.msg);
+            },
+            error: function (returndata) {
+                console.log(returndata.msg);
+            }
+        });
+        $.ajax({
+            url: 'http://114.115.212.203:8001/info/',
+            type: 'GET',
+            xhrFields: {
+                withCredentials: true
+            },
+            dataType: "json",
+            success: function (returndata) {
+                $('#name').html(returndata.user.uname);
+                $('#email').html(returndata.user.uemail);
+                $('#sex').html(returndata.user.usex);
+                $('#birthday').html(returndata.user.uhonesty);
+                $('#job').html(returndata.user.uidentity);
+            },
+            error: function (returndata) {
+                console.log(returndata.msg);
+            }
+        });
+
+        $('#example').DataTable( {
+            "ajax": '/ajax.txt'
+        } );
+
+    });
+</script>
 <script type="text/javascript">
     $(function () {
         /*换肤*/

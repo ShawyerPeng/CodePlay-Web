@@ -1,0 +1,7 @@
+.DS_Store
+/build
+/out
+/target
+/captures
+.externalNativeBuild
+.gradle/
