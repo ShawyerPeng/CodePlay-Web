@@ -34,102 +34,6 @@
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
             <li class="li-border"><a class="mystyle-color" href="#">管理控制台</a></li>
-            <li class="dropdown li-border"><a href="#" class="dropdown-toggle mystyle-color" data-toggle="dropdown">产品与服务<span
-                    class="caret"></span></a>
-                <!----下拉框选项---->
-                <div class="dropdown-menu topbar-nav-list">
-                    <div class="topbar-nav-col">
-                        <div class="topbar-nav-item">
-                            <p class="topbar-nav-item-title">弹性计算</p>
-                            <ul>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-road"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-picture"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-gift"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="">
-                            <p class="topbar-nav-item-title">弹性计算</p>
-                            <ul>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-road"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-picture"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-gift"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div class="topbar-nav-col">
-                        <div class="topbar-nav-item">
-                            <p class="topbar-nav-item-title">弹性计算</p>
-                            <ul>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-road"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-picture"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-gift"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="">
-                            <p class="topbar-nav-item-title">弹性计算</p>
-                            <ul>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-road"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-picture"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-gift"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </li>
         </ul>
 
         <ul class="nav navbar-nav pull-right">
@@ -219,7 +123,7 @@
                 <dl class="account-basic clearfix">
                     <dt class="pull-left">
                     <p class="account-head">
-                        <img src="img/noavatar_middle.gif" id="avatar">
+                        <img src="" id="avatar">
                     </p>
                     </dt>
                     <dd class="pull-left margin-large-left margin-small-top">
@@ -231,7 +135,7 @@
                         </form>
                         </p>
                         <p class="text-small">
-                            <span class="show pull-left base-name">会员账号</span>:<span class="margin-left">小朱</span><br/>
+                            <span class="show pull-left base-name">会员账号</span>:<span class="margin-left" id="realname"></span><br/>
                         </p>
                         <p class="text-small">
                             <span class="show pull-left base-name">认证状态</span>:
@@ -319,10 +223,6 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
-//        $('#btn_file').bind('', function(){
-//
-//        });
-
         $.ajax({
             url: 'http://114.115.212.203:8001/do_login/',
             type: 'POST',
@@ -348,13 +248,22 @@
             success: function (returndata) {
                 $('#image').html(returndata.user.faceurl);
                 $('#name').html(returndata.user.uname);
+                $('#realname').html(returndata.user.urealname);
                 $('#email').html(returndata.user.uemail);
                 $('#tel').html(returndata.user.utel);
                 $('#idcard').html(returndata.user.uidcard);
-                $('#sex').html(returndata.user.usex);
-                $('#birthday').html(returndata.user.uyear + "年" + returndata.user.umonth + "月" + returndata.user.uday + "日");
+                if(returndata.user.usex===0) {
+                    $('#sex').html("女");
+                } else if(returndata.user.usex===1) {
+                    $('#sex').html("男");
+                } else if(returndata.user.usex===-1) {
+                    $('#sex').html("未填写");
+                }
+
+                $('#birthday').html(returndata.user.uyear + "-" + returndata.user.umonth + "-" + returndata.user.uday);
                 $('#job').html(returndata.user.uidentity);
                 $('#honesty').html(returndata.user.uhonesty);
+                $("#avatar").attr("src", "http://114.115.212.203:8001" + returndata.user.faceurl);
             },
             error: function (returndata) {
                 console.log(returndata.msg);
@@ -418,7 +327,7 @@
                             dataType: "json",
                             success: function (returndata) {
                                 console.log(returndata);
-//                                window.location.reload();
+                                location.reload();
                                 $("#ename").reload();
                             },
                             error: function (returndata) {
@@ -455,40 +364,13 @@
             contentType: false,
             success: function (returndata) {
                 console.log(returndata);
+                location.reload();
             },
             error: function (returndata) {
                 console.log(returndata);
             }
         });
     }
-
-//    $("#edit_avatar").click(function () {
-//        $("#btn_file").click();
-////        document.querySelector('#edit_avatar').addEventListener('click', function(evt) {
-////            evt.stopPropagation();
-////            document.getElementById('btn_file').click();
-////        }, false);
-//
-//        $.ajax({
-//            url: 'http://114.115.212.203:8001/do_uploadface/',
-//            type: 'POST',
-//            xhrFields: {
-//                withCredentials: true
-//            },
-//            data: new FormData($("#uploadForm")[0]),
-//            dataType: "json",
-//            processData: false,
-//            contentType: false,
-//            success: function (returndata) {
-//                console.log(returndata);
-//            },
-//            error: function (returndata) {
-//                console.log(returndata);
-//            }
-//        });
-//    });
-
-
 </script>
 <script type="text/javascript">
     $(function () {

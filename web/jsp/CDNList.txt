@@ -25,3 +25,8 @@ https://github.com/js-cookie/js-cookie
 
 // clipboard.js
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+// Dropzone.js
+<link href="https://cdn.bootcss.com/dropzone/5.1.0/min/dropzone.min.css">
+<script src="https://cdn.bootcss.com/dropzone/5.1.0/min/dropzone.min.js"></script>
+<script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>

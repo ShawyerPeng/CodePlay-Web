@@ -31,102 +31,6 @@
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
             <li class="li-border"><a class="mystyle-color" href="#">管理控制台</a></li>
-            <li class="dropdown li-border"><a href="#" class="dropdown-toggle mystyle-color" data-toggle="dropdown">产品与服务<span
-                    class="caret"></span></a>
-                <!----下拉框选项---->
-                <div class="dropdown-menu topbar-nav-list">
-                    <div class="topbar-nav-col">
-                        <div class="topbar-nav-item">
-                            <p class="topbar-nav-item-title">弹性计算</p>
-                            <ul>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-road"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-picture"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-gift"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="">
-                            <p class="topbar-nav-item-title">弹性计算</p>
-                            <ul>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-road"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-picture"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-gift"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div class="topbar-nav-col">
-                        <div class="topbar-nav-item">
-                            <p class="topbar-nav-item-title">弹性计算</p>
-                            <ul>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-road"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-picture"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-gift"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="">
-                            <p class="topbar-nav-item-title">弹性计算</p>
-                            <ul>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-road"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-picture"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                                <li><a href="#">
-                                    <span class="glyphicon glyphicon-gift"></span>
-                                    <span class="">云服务器 ECS</span>
-                                </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </li>
         </ul>
 
         <ul class="nav navbar-nav pull-right">
@@ -215,32 +119,35 @@
                 </div>
                 <div class="info-center-title">
 					    <span class="padding-large-right manage-title pull-left">
-                           <a class="active" href="#">全部消息</a>
+                           <a class="active" href="#">所有标签(115)</a>
                         </span>
-                    <span class="padding-large-right pull-left"><a href="#">已读消息(0)</a></span>
-                    <span class="pull-left"><a href="#">未读消息(0)</a></span>
+                    <span class="padding-large-right pull-left"><a href="#">已认证标签(15)</a></span>
+                    <span class="pull-left"><a href="#">未认证标签(100)</a></span>
                 </div>
                 <div class="clearfix"></div>
                 <div class="table-margin">
-                    <table class="table table-bordered table-header">
+                    <table id="table" class="table table-bordered table-header">
                         <thead>
                         <tr>
-                            <td class="w70">标题内容</td>
+                            <td class="w10">标题内容</td>
                             <td class="w15">提交时间</td>
+                            <td class="w15">标签</td>
+                            <td class="w15">类型</td>
+                            <td class="w15">类型</td>
                             <td class="w15">类型</td>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>2</td>
-                            <td>2</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>2</td>
-                            <td>2</td>
-                        </tr>
+                        <!--<tr>-->
+                            <!--<td>2</td>-->
+                            <!--<td>2</td>-->
+                            <!--<td>2</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>2</td>-->
+                            <!--<td>2</td>-->
+                            <!--<td>2</td>-->
+                        <!--</tr>-->
                         </tbody>
                     </table>
                 </div>
@@ -252,28 +159,28 @@
 
         </div>
 
-        <table id="example" class="display" cellspacing="0" width="100%">
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Extn.</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-            </thead>
-            <tfoot>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Extn.</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-            </tfoot>
-        </table>
+        <!--<table id="example" class="display" cellspacing="0" width="100%">-->
+            <!--<thead>-->
+            <!--<tr>-->
+                <!--<th>Name</th>-->
+                <!--<th>Position</th>-->
+                <!--<th>Office</th>-->
+                <!--<th>Extn.</th>-->
+                <!--<th>Start date</th>-->
+                <!--<th>Salary</th>-->
+            <!--</tr>-->
+            <!--</thead>-->
+            <!--<tfoot>-->
+            <!--<tr>-->
+                <!--<th>Name</th>-->
+                <!--<th>Position</th>-->
+                <!--<th>Office</th>-->
+                <!--<th>Extn.</th>-->
+                <!--<th>Start date</th>-->
+                <!--<th>Salary</th>-->
+            <!--</tr>-->
+            <!--</tfoot>-->
+        <!--</table>-->
     </div>
 </div>
 
@@ -313,9 +220,41 @@
             }
         });
 
-        $('#example').DataTable( {
-            "ajax": '/ajax.txt'
-        } );
+        $.ajax({
+            url: 'http://114.115.212.203:8001/history/',
+            type: 'GET',
+            xhrFields: {
+                withCredentials: true
+            },
+            dataType: "json",
+            success: function (returndata) {
+                console.log(returndata.history['1']);
+                console.log(Object.keys(returndata.history).length);
+                for(var i=0; i<Object.keys(returndata.history).length; i++) {
+                    $("#table").append("<tr><td>" + "<img width='200px' src='" + "https://www.qiniu.com/wp-content/themes/Earthshaker-1/images/products/kodo/private-deployment.png" + "'>" + "</td><td>" + returndata.history['1'] + "</td><td>" + returndata.history['1'] + "</td><tr/>");
+                }
+            },
+            error: function (returndata) {
+                console.log(returndata.msg);
+            }
+        });
+
+//        $('#example').DataTable( {
+//            "ajax": {
+//                "url": "http://114.115.212.203:8001/history/",
+//                "dataSrc": function(json) {
+//                    var return_data = [];
+//                    console.log(Object.keys(json.history).length)
+//                    for(var i=0; i<json.length; i++) {
+//                        return_data.push({
+//                            'url'  : json.history[i.toString()]
+//                        });
+//                    }
+//
+//                    return return_data;
+//                }
+//            }
+//        } );
 
     });
 </script>
