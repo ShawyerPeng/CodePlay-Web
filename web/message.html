@@ -30,7 +30,7 @@
         <a class="navbar-brand mystyle-brand"><span class="glyphicon glyphicon-home"></span></a></div>
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li class="li-border"><a class="mystyle-color" href="#">管理控制台</a></li>
+            <li class="li-border"><a class="mystyle-color" href="/index.html">管理控制台</a></li>
         </ul>
 
         <ul class="nav navbar-nav pull-right">
@@ -186,21 +186,21 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $.ajax({
-            url: 'http://114.115.212.203:8001/do_login/',
-            type: 'POST',
-            data: {
-                "name": "admin",
-                "pwd": "9876543210"
-            },
-            dataType: "json",
-            success: function (returndata) {
-                console.log(returndata.msg);
-            },
-            error: function (returndata) {
-                console.log(returndata.msg);
-            }
-        });
+//        $.ajax({
+//            url: 'http://114.115.212.203:8001/do_login/',
+//            type: 'POST',
+//            data: {
+//                "name": "admin",
+//                "pwd": "9876543210"
+//            },
+//            dataType: "json",
+//            success: function (returndata) {
+//                console.log(returndata.msg);
+//            },
+//            error: function (returndata) {
+//                console.log(returndata.msg);
+//            }
+//        });
         $.ajax({
             url: 'http://114.115.212.203:8001/info/',
             type: 'GET',

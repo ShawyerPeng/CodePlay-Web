@@ -67,6 +67,9 @@
             $.ajax({
                 url: 'http://114.115.212.203:8001/do_login/',
                 type: 'POST',
+                xhrFields: {
+                    withCredentials: true
+                },
                 dataType: "json",
                 data: {
                     'name':name,
