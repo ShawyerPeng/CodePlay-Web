@@ -97,9 +97,9 @@
                         <a href="userInfo.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span
                                 class="sub-title">账号管理</span></a></li>
                     <li>
-                        <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>消息中心</div>
+                        <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>标签管理</div>
                         <a href="message.html"><span class="sublist-icon glyphicon glyphicon-envelope"></span><span
-                                class="sub-title">消息中心</span></a></li>
+                                class="sub-title">标签管理</span></a></li>
                     <li>
                         <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>上传图片</div>
                         <a href="smsInfo.html"><span class="sublist-icon glyphicon glyphicon-bullhorn"></span><span
@@ -135,7 +135,7 @@
                         </form>
                         </p>
                         <p class="text-small">
-                            <span class="show pull-left base-name">会员账号</span>:<span class="margin-left" id="realname"></span><br/>
+                            <span class="show pull-left base-name">会员账号</span>:<span class="margin-left" id="name"></span><br/>
                         </p>
                         <p class="text-small">
                             <span class="show pull-left base-name">认证状态</span>:
@@ -143,7 +143,7 @@
                             <!-- <a class="margin-left text-main text-underline" href="#">立即认证</a> -->
                         </p>
                         <p class="text-small">
-                            <span class="show pull-left base-name">注册时间</span>:<span class="margin-left">2015-01-12 11:50:22</span>
+                            <span class="show pull-left base-name">注册时间</span>:<span class="margin-left">2017-06-18 11:50:22</span>
                         </p>
                     </dd>
                 </dl>
@@ -151,13 +151,13 @@
                 <dl class="account-basic clearfix">
                     <dd class="pull-left margin-large-left margin-small-top">
                         <p class="text-small">
-                            <span class="show pull-left base-name">姓名</span>:<span class="margin-left" id="name"></span>
+                            <span class="show pull-left base-name">姓名</span>:<span class="margin-left" id="realname"></span>
                         </p>
                         <p class="text-small">
                             <span class="show pull-left base-name">邮箱</span>:<span class="margin-left" id="email"></span>
                         </p>
                         <p class="text-small">
-                            <span class="show pull-left base-name">手机号</span>:<span class="margin-left" id="phone"></span>
+                            <span class="show pull-left base-name">手机号</span>:<span class="margin-left" id="tel"></span>
                         </p>
                         <p class="text-small">
                             <span class="show pull-left base-name">身份证号</span>:<span class="margin-left" id="idcard"></span>
@@ -168,9 +168,9 @@
                         <p class="text-small">
                             <span class="show pull-left base-name">生日</span>:<span class="margin-left" id="birthday"></span>
                         </p>
-                        <p class="text-small">
-                            <span class="show pull-left base-name">职业</span>:<span class="margin-left" id="job"></span>
-                        </p>
+                        <!--<p class="text-small">-->
+                            <!--<span class="show pull-left base-name">职业</span>:<span class="margin-left" id="identity"></span>-->
+                        <!--</p>-->
                         <p class="text-small">
                             <span class="show pull-left base-name">诚信值</span>:<span class="margin-left" id="honesty"></span>
                         </p>
@@ -261,7 +261,7 @@
                 }
 
                 $('#birthday').html(returndata.user.uyear + "-" + returndata.user.umonth + "-" + returndata.user.uday);
-                $('#job').html(returndata.user.uidentity);
+                $('#identity').html(returndata.user.uidentity);
                 $('#honesty').html(returndata.user.uhonesty);
                 $("#avatar").attr("src", "http://114.115.212.203:8001" + returndata.user.faceurl);
             },
@@ -281,6 +281,7 @@
                 '<input type="text" placeholder="认证身份" id="eidentity" class="name form-control" required />' +
                 '<input type="text" placeholder="身份证" id="eidcard" class="name form-control" required />' +
                 '<input type="text" placeholder="手机号" id="etel" class="name form-control" required />' +
+                '<input type="text" placeholder="邮箱" id="eemail" class="name form-control" required />' +
                 '<input type="text" placeholder="年" id="eyear" class="name form-control" required /><nobr/>' +
                 '<input type="text" placeholder="月" id="emonth" class="name form-control" required /><nobr/>' +
                 '<input type="text" placeholder="日" id="eday" class="name form-control" required />' +
@@ -300,13 +301,14 @@
                         var eidentity = $("#eidentity").val();
                         var eidcard = $("#eidcard").val();
                         var etel = $("#etel").val();
+                        var eemail = $("#eemail").val();
                         var eyear = parseInt($("#eyear").val());
                         var emonth = parseInt($("#emonth").val());
                         var eday = parseInt($("#eday").val());
 
                         if(esex==="男") esex="1";
                         if(esex==="女") esex="0";
-                        if(esex!=="男"&&esex!=="女") esex="-1";
+                        if(esex!=="男"||esex!=="女") esex="-1";
 
                         $.ajax({
                             url: 'http://114.115.212.203:8001/do_modify/',
@@ -317,9 +319,10 @@
                             data: {
                                 'realname':ename,
                                 'sex':esex,
-                                'identity':eidentity,
+//                                'identity':eidentity,
                                 'idcard':eidcard,
                                 'tel':etel,
+                                'email':eemail,
                                 'year':eyear,
                                 'month':emonth,
                                 'day':eday

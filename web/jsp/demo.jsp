@@ -152,7 +152,7 @@
             },
             data: {
                 "name": "admin",
-                "pwd": "9876543210"
+                "pwd": "123456"
             },
             dataType: "json",
             success: function (returndata) {

@@ -4,13 +4,14 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
-    <title>消息中心</title>
+    <title>标签管理</title>
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" title="" rel="stylesheet"/>
     <link title="" href="css/style.css" rel="stylesheet" type="text/css"/>
     <link title="blue" href="css/dermadefault.css" rel="stylesheet" type="text/css"/>
     <link title="green" href="css/dermagreen.css" rel="stylesheet" type="text/css" disabled="disabled"/>
     <link title="orange" href="css/dermaorange.css" rel="stylesheet" type="text/css" disabled="disabled"/>
     <link href="css/templatecss.css" rel="stylesheet" title="" type="text/css"/>
+    <link href="css/buttons.css">
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
     <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"/>
@@ -94,9 +95,9 @@
                         <a href="userInfo.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span
                                 class="sub-title">账号管理</span></a></li>
                     <li class="active">
-                        <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>消息中心</div>
+                        <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>标签管理</div>
                         <a href="message.html"><span class="sublist-icon glyphicon glyphicon-envelope"></span><span
-                                class="sub-title">消息中心</span></a></li>
+                                class="sub-title">标签管理</span></a></li>
                     <li>
                         <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>上传图片</div>
                         <a href="smsInfo.html"><span class="sublist-icon glyphicon glyphicon-bullhorn"></span><span
@@ -114,40 +115,30 @@
             <div class="info-center">
                 <div class="page-header">
                     <div class="pull-left">
-                        <h4>消息中心</h4>
+                        <h4>标签管理</h4>
                     </div>
                 </div>
                 <div class="info-center-title">
 					    <span class="padding-large-right manage-title pull-left">
-                           <a class="active" href="#">所有标签(115)</a>
+                           <a class="active" href="#" id="all"></a>
                         </span>
-                    <span class="padding-large-right pull-left"><a href="#">已认证标签(15)</a></span>
-                    <span class="pull-left"><a href="#">未认证标签(100)</a></span>
+                    <span class="padding-large-right pull-left"><a href="#" id="yes"></a></span>
+                    <span class="pull-left"><a href="#" id="no"></a></span>
                 </div>
                 <div class="clearfix"></div>
+		<button id="download" class="button button-primary button-rounded button-small" style="background-color: #4cb0f9; color: #FFF;">导出标签集</button>
                 <div class="table-margin">
                     <table id="table" class="table table-bordered table-header">
                         <thead>
                         <tr>
-                            <td class="w10">标题内容</td>
-                            <td class="w15">提交时间</td>
-                            <td class="w15">标签</td>
-                            <td class="w15">类型</td>
-                            <td class="w15">类型</td>
-                            <td class="w15">类型</td>
+                            <td class="w10" align="center">标题内容</td>
+                            <td class="w15" align="center">标签ID</td>
+                            <td class="w15" align="center">标签集</td>
+                            <!--<td class="w15" align="center">当前标签数</td>-->
+                            <td class="w15" align="center">最大标签数 <button id="submit" class="file-upload-btn" onclick="submit()">提交修改</button></td>
                         </tr>
                         </thead>
                         <tbody>
-                        <!--<tr>-->
-                            <!--<td>2</td>-->
-                            <!--<td>2</td>-->
-                            <!--<td>2</td>-->
-                        <!--</tr>-->
-                        <!--<tr>-->
-                            <!--<td>2</td>-->
-                            <!--<td>2</td>-->
-                            <!--<td>2</td>-->
-                        <!--</tr>-->
                         </tbody>
                     </table>
                 </div>
@@ -214,11 +205,32 @@
                 $('#sex').html(returndata.user.usex);
                 $('#birthday').html(returndata.user.uhonesty);
                 $('#job').html(returndata.user.uidentity);
+                $('#all').html("所有标签(" + 9 + ")");
+                $('#yes').html("已认证标签(" + 0 + ")");
+                $('#no').html("未认证标签(" + 9 + ")");
             },
             error: function (returndata) {
                 console.log(returndata.msg);
             }
         });
+
+
+
+
+//        var result;console.log(1);
+//        $(document).ready(function(){
+//            $.ajax({
+//                type:'GET',
+//                url:'http://114.115.212.203:8001/info/',
+//                dataType:'json',
+//                async:false,
+//                complete:function(coordinates){
+//                    result = coordinates;
+//                    console.log(2);
+//                }
+//            });
+//            console.log(result);
+//        });
 
         $.ajax({
             url: 'http://114.115.212.203:8001/history/',
@@ -230,14 +242,76 @@
             success: function (returndata) {
                 console.log(returndata.history['1']);
                 console.log(Object.keys(returndata.history).length);
-                for(var i=0; i<Object.keys(returndata.history).length; i++) {
-                    $("#table").append("<tr><td>" + "<img width='200px' src='" + "https://www.qiniu.com/wp-content/themes/Earthshaker-1/images/products/kodo/private-deployment.png" + "'>" + "</td><td>" + returndata.history['1'] + "</td><td>" + returndata.history['1'] + "</td><tr/>");
+                for(var i=1; i<Object.keys(returndata.history).length; i++) {
+//                    $("#table").append("<tr><td>" + "<img width='200px' src='" + getUrlById(i) + "'>" + "</td><td>" + returndata.history[i] + "</td><td>" + returndata.history[i] + "</td><tr/>");
+                    var str = JSON.stringify(Object.keys(returndata.history));
+                    console.log();
+                    $("#table").append("<tr align='center' style='vertical-align:top;'><td>" + "<img width='20px' src=''" + "</td><td>" + i + "</td><td>" + returndata.history[i-1] + "</td><td>" + "<div contenteditable='true'>6</div>" +"</td></tr>");
                 }
             },
             error: function (returndata) {
-                console.log(returndata.msg);
+                console.log(returndata);
             }
         });
+        $.ajax({
+            url: 'http://114.115.212.203:8001/history/',
+            type: 'GET',
+            xhrFields: {
+                withCredentials: true
+            },
+            dataType: "json",
+            success: function (returndata) {
+                for(var j=0; j<Object.keys(returndata.history).length; j++) {
+                    $.ajax({
+                        url: 'http://114.115.212.203:8001/getpicbyid/',
+                        type: 'POST',
+                        async: false,
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        data: {
+                            'pid': j+1
+                        },
+                        dataType: "json",
+                        success: function (returndata) {
+                            img_url = "http://114.115.212.203:8001" + returndata.url;
+                            $("#table > tbody > tr:nth-child(" + j + ") > td:nth-child(1) > img").attr("src", img_url);
+                        }
+                    });
+                }
+            },
+            error: function (returndata) {
+                console.log(returndata);
+            }
+        });
+
+        function getUrlById(pid) {
+            var url;
+            $.ajax({
+                url: 'http://114.115.212.203:8001/getpicbyid/',
+                type: 'POST',
+                timeout: 20000,
+                xhrFields: {
+                    withCredentials: true
+                },
+                data: {
+                    'pid':pid
+                },
+                dataType: "json",
+                success: function (returndata) {
+                    img_url = "http://114.115.212.203:8001" + returndata.url;
+                    for(var i=1; i<=($("#table > tbody > tr").length)/2; i++) {
+                        $("#table > tbody > tr:nth-child(" + (2*i-1) + ") > td:nth-child(1)").html(img_url);
+                    }
+                },
+                complete: function (result) {
+                    url = result;
+                }
+            });
+            return url;
+        }
+
+
 
 //        $('#example').DataTable( {
 //            "ajax": {
@@ -257,6 +331,12 @@
 //        } );
 
     });
+</script>
+<script type="text/javascript">
+    $("#submit").click(function () {
+//        $("#table > tbody > tr:nth-child(" + j + ") > td:nth-child(1) > img").attr("src", img_url);
+        alert("修改成功");
+    })
 </script>
 <script type="text/javascript">
     $(function () {
@@ -325,5 +405,7 @@
         })
     })
 </script>
+
+
 </body>
 </html>

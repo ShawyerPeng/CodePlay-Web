@@ -28,10 +28,6 @@
                 <div class="group-ipt password">
                     <input type="password" name="password" id="pwd" class="ipt" placeholder="输入登录密码" required>
                 </div>
-                <div class="group-ipt verify">
-                    <input type="text" name="verify" id="verify" class="ipt" placeholder="请输入验证码" required>
-                    <img src="/createImageCode" class="imgcode">
-                </div>
             </div>
         </div>
         <div class="button">
@@ -100,7 +96,7 @@
     },function(){
         layer.closeAll('tips');
     }).click(function(){
-        $(this).attr('src','/createImageCode' + Math.random());
+        $(this).attr('src','/createImageCode/' + Math.random());
     });
     $("#remember-me").click(function(){
         var n = document.getElementById("remember-me").checked;

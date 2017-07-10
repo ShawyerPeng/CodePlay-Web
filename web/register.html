@@ -34,10 +34,6 @@
                 <div class="group-ipt password">
                     <input type="password" name="password" id="password2" class="ipt" placeholder="重复密码" required>
                 </div>
-                <div class="group-ipt verify">
-                    <input type="text" name="verify" id="verify" class="ipt" placeholder="输入验证码" required>
-                    <img src="/createImageCode" class="imgcode">
-                </div>
                 <div class="button">
                     <button type="button" class="login-btn register-btn" id="button">注册</button>
                 </div>
@@ -84,61 +80,5 @@
             }
         })
     });
-</script>
-<script>
-    $('.imgcode').hover(function(){
-        layer.tips("看不清？点击更换", '.verify', {
-            time: 6000,
-            tips: [2, "#3c3c3c"]
-        })
-    },function(){
-        layer.closeAll('tips');
-    }).click(function(){
-        $(this).attr('src','/createImageCode?t=1&' + Math.random());
-    });
-    $("#remember-me").click(function(){
-        var n = document.getElementById("remember-me").checked;
-        if(n){
-            $(".zt").show();
-        }else{
-            $(".zt").hide();
-        }
-    });
-</script>
-<script>
-    var code="" ; //在全局定义验证码
-    function createCode(){
-        code = "";
-        var codeLength = 6;//验证码的长度
-        var checkCode = document.getElementById("checkCode");
-        checkCode.value = "";
-        var selectChar = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','J','K','L','M','N','P','Q','R','S','T','U','V','W','X','Y','Z');
-
-        for(var i=0;i<codeLength;i++) {
-            var charIndex = Math.floor(Math.random()*32);
-            code +=selectChar[charIndex];
-        }
-        if(code.length != codeLength){
-            createCode();
-        }
-        document.getElementById("checkCode").innerHTML = code;
-    }
-
-    function validate () {
-        var inputCode = document.getElementById("checkNum").value.toUpperCase();
-        if(inputCode.length <=0) {
-            alert("请输入验证码！");
-            return false;
-        }
-        else if(inputCode != code ){
-            alert("验证码输入错误！");
-            createCode();
-            return false;
-        }
-        else {
-            alert("验证码通过！");
-            return true;
-        }
-    }
 </script>
 </html>
